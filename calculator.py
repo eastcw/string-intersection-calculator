@@ -8,6 +8,7 @@ def clean_input(string):
         for j in alphabet:
             if i == j:
                 cleanString += i
+                break
     return cleanString
 
 def calculate(string1, string2, string3):
@@ -51,9 +52,9 @@ print(
 )
 input("Press enter to continue...")
 
-string1 = input("Please input your first list here, and then press enter:")
-string2 = input("Okay, now please input your next list, followed by enter:")
-string3 = input("And finally, the last list followed by enter:")
+string1 = input("Please input your first list here, and then press enter: ")
+string2 = input("Okay, now please input your next list, followed by enter: ")
+string3 = input("And finally, the last list followed by enter: ")
 
 cleanString1 = clean_input(string1)
 cleanString2 = clean_input(string2)
